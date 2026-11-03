@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chimuanya Elyon Okagbue | Data Analyst & BI Specialist</title>
+<title>Data with Ellion | Data Analyst & BI Specialist</title>
 <meta name="description" content="Data Analyst and Business Intelligence specialist. Power BI, SQL, Python, dbt, and machine learning projects with interactive analytical reports, KPIs, and charts.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Caveat:wght@700&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <style>
 :root{
@@ -40,11 +40,15 @@ h2{font-size:2.1rem;margin-bottom:10px}
 .btn-light{border-color:#fff;color:#fff;background:transparent}
 .btn-light:hover{background:rgba(255,255,255,.08)}
 
-/* Nav & Dropdown Menu */
+/* Nav & Branding Styling */
 nav{position:fixed;top:0;left:0;right:0;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:50}
 nav .container{display:flex;justify-content:space-between;align-items:center;height:64px}
-.logo{font-weight:800;color:var(--navy);font-size:1.1rem}
-.logo span{color:var(--mustard)}
+
+/* Custom "DATA with ELLION" Logo Format */
+.logo-brand{display:inline-flex;align-items:baseline;font-size:1.25rem;letter-spacing:.04em;cursor:pointer;user-select:none}
+.logo-brand .brand-bold{font-weight:900;color:var(--navy);text-transform:uppercase}
+.logo-brand .brand-script{font-family:'Caveat', cursive;color:var(--mustard);font-size:1.45rem;font-weight:700;margin:0 4px 0 3px;text-transform:lowercase;transform:rotate(-4deg);display:inline-block}
+
 .nav-links{display:flex;align-items:center}
 .nav-links a{margin-left:22px;font-size:.92rem;color:var(--muted);font-weight:500;cursor:pointer}
 .nav-links a:hover,.dropdown:hover .dropbtn{color:var(--navy)}
@@ -185,7 +189,11 @@ footer a:hover{color:var(--mustard)}
 
 <nav>
   <div class="container">
-    <a onclick="navigateTo('home')" class="logo">Chimuanya<span>.</span></a>
+    <div onclick="navigateTo('home')" class="logo-brand">
+      <span class="brand-bold">DATA</span>
+      <span class="brand-script">with</span>
+      <span class="brand-bold">ELLION</span>
+    </div>
     <div class="nav-links">
       <a onclick="navigateTo('home')">Home</a>
       <a onclick="navigateTo('home', 'about')">About</a>
